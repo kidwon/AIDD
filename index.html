@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="日本のSIerに向けたAI駆動開発（AIDD）への転換提案。KDDIの事例、従来型との違い、Skills + Codex導入方法、PoC計画を紹介。" />
+  <title>AIDD / SHIFT — AI駆動開発への転換</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <nav class="wrap site-nav" aria-label="セクションナビゲーション" data-i18n-aria="nav.aria">
+    <a href="#top" class="logo">AIDD <span>/</span> <em>SHIFT</em></a>
+    <div class="nav-right">
+      <div class="navlinks"><a href="#why">01 WHY NOW</a><a href="#story">02 CASE</a><a href="#traditional">03 MODEL</a><a href="#matrix">04 COMPARE</a><a href="#implementation">05 BUILD</a><a href="#poc">06 PoC</a></div>
+      <div class="lang-switch" role="group" aria-label="言語切替" data-i18n-aria="lang.aria">
+        <button type="button" class="lang-btn active" data-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
+    </div>
+  </nav>
+  <header class="wrap hero" id="top">
+    <div class="eyebrow">AI-DRIVEN DEVELOPMENT / STRATEGIC PROPOSAL</div>
+    <h1 data-i18n-html="hero.title">コードを書く時代から、<br><span class="accent">開発を設計し直す時代へ。</span></h1>
+    <p class="lead" data-i18n="hero.lead">AIは単なるコーディング支援ツールではない。人が目的と品質を判断し、AIが設計・実装・テストを継続的に実行する。日本のSIerが、次の開発モデルへ移行するための提案。</p>
+    <div class="hero-bottom"><a href="#why" class="primary-link" data-i18n="hero.ctaPrimary">提案を見る ↘</a><a href="#matrix" class="minor-link" data-i18n="hero.ctaSecondary">開発モデルを比較する →</a></div>
+    <div class="key-message"><span class="dot"></span><span data-i18n-html="hero.keyMessage"><strong>AIDDとは</strong> — 人が判断し、AIが実行を駆動する開発アプローチ。</span></div>
+  </header>
+  <main>
+  <section class="content-section" id="why"><div class="wrap">
+    <div class="section-index">01 / WHY NOW?</div><h2 data-i18n="why.title">なぜ、今なのか。</h2>
+    <p class="sec-desc" data-i18n="why.desc">AIの進化が変えるのは作業時間だけではない。人月を基準に設計された開発ビジネスの前提そのものが、変わり始めている。</p>
+    <div class="three-grid">
+      <article class="panel"><div class="panel-num">01 — BUSINESS</div><h3 data-i18n="why.card1Title">人月モデルの転換</h3><p data-i18n="why.card1Desc">開発工数が短縮されるほど、投入人数・時間に依存した収益構造は再検討を迫られる。顧客が求める価値は工数から成果へ。</p></article>
+      <article class="panel"><div class="panel-num">02 — TECHNOLOGY</div><h3 data-i18n="why.card2Title">コード生成から工程実行へ</h3><p data-i18n="why.card2Desc">Coding Agentはコード変更だけでなく、テストの実行、結果の確認、修正までを連続して行えるようになった。</p></article>
+      <article class="panel"><div class="panel-num">03 — COMPETITION</div><h3 data-i18n="why.card3Title">開発能力の再定義</h3><p data-i18n="why.card3Desc">競争力を左右するのはエンジニアの人数だけではない。要件を整理し、AIを安全に運用し、短期間で価値を届ける組織能力が重要になる。</p></article>
+    </div>
+  </div></section>
+  <section class="content-section" id="story"><div class="wrap">
+    <div class="section-index">02 / KDDI SUCCESS STORY</div><h2 data-i18n="story.title">すでに、成果は出ている。</h2>
+    <p class="sec-desc" data-i18n="story.desc">KDDIアイレットは、AIを個々の工程に追加したのではなく、開発プロセスそのものを再設計した。</p>
+    <div class="feature">
+      <div><div class="feature-label" data-i18n="story.label">KDDIアイレット / 大規模システム刷新</div><h3 data-i18n="story.heading">既存コードをAIが理解できる状態に整え、設計・実装・検証の進め方を変える。</h3><p data-i18n="story.body">既存コードの整理、コーディング規約・設計ルール・テスト手順の標準化、AIによる一次レビューを組み合わせ、人は重要な業務ロジックと仕様の確認に集中。</p><a class="source" href="https://biz.kddi.com/beconnected/feature/2026/260731/" target="_blank" rel="noopener noreferrer" data-i18n="story.link">KDDI公式記事を読む ↗</a></div>
+      <div class="metric"><div class="metric-label" data-i18n="story.metricOldLabel">従来の想定工期</div><div class="old" data-i18n="story.metricOld">2〜3年</div><div class="down">↓</div><div class="metric-label" data-i18n="story.metricNewLabel">AIDDを活用した完遂実績</div><div class="big" data-i18n="story.metricNew">半年</div><div class="metric-small" data-i18n="story.metricSmall">大規模システム更新の公開事例</div></div>
+    </div>
+    <div class="compare-conclusion" data-i18n-html="story.conclusion">成果の本質は「AIがコードを速く書いた」ことではない。<br>開発の手順・役割・検証方法を変えたことにある。</div>
+    <p class="tiny-source" data-i18n="story.source">出典：KDDI公式記事（2026年7月31日）。工期は公開事例における想定と実績。</p>
+  </div></section>
+  <section class="content-section" id="traditional"><div class="wrap">
+    <div class="section-index">03 / TRADITIONAL VS AIDD</div><h2 data-i18n="traditional.title">変わるのは、工程ではなく実行主体。</h2>
+    <p class="sec-desc" data-i18n="traditional.desc">要件定義、設計、テスト、品質保証の必要性は変わらない。人が各工程を実行するモデルから、人が判断しAIが工程を横断して実行するモデルへ。</p>
+    <div class="compare-grid">
+      <div class="compare-side"><div class="side-tag">TRADITIONAL SIer</div><h3 data-i18n="traditional.oldTitle">人から人への引き継ぎ</h3><div class="stage" data-i18n-html="traditional.oldStage1">要件定義 → 基本設計 <span>文書・承認</span></div><div class="stage" data-i18n-html="traditional.oldStage2">詳細設計 → 製造 <span>文書・実装</span></div><div class="stage" data-i18n-html="traditional.oldStage3">単体 → 結合 → 総合テスト <span>検証・修正</span></div><p data-i18n="traditional.oldDesc">工程間の待ち時間、成果物の再解釈、変更時の手戻りが蓄積しやすい。</p></div>
+      <div class="compare-side new"><div class="side-tag">KDDI AIDD APPROACH</div><h3 data-i18n="traditional.newTitle">人の判断 × AIの継続実行</h3><div class="stage" data-i18n-html="traditional.newStage1">人：目的・要件・品質基準を判断 <span>DECIDE</span></div><div class="stage" data-i18n-html="traditional.newStage2">AI：仕様整理 → 設計 → 実装 <span>EXECUTE</span></div><div class="stage" data-i18n-html="traditional.newStage3">AI：テスト → レビュー → 修正 <span>VERIFY</span></div><p data-i18n="traditional.newDesc">規則・仕様・テストを一貫して参照し、検証結果を次の修正へつなげる。重要箇所は人が確認・承認。</p></div>
+    </div>
+    <div class="compare-conclusion" data-i18n="traditional.conclusion">人の仕事を減らすことが目的ではない。人の時間を、業務判断・設計の意思決定・品質責任に集中させる。</div>
+  </div></section>
+  <section class="content-section" id="matrix"><div class="wrap">
+    <div class="section-index">04 / KDDI VS MATT POCOCK SKILLS</div><h2 data-i18n="matrix.title">同じ思想を、より小さく実装できるか。</h2>
+    <p class="sec-desc" data-i18n="matrix.desc">KDDIのAIDDは企業向けの開発・品質管理アプローチ。一方、Matt Pocock Skillsは、AI Coding Agentに工程上の規律を与える再利用可能なSkills群。目的は近いが、提供範囲と成熟度は異なる。</p>
+    <div class="filterbar" role="group" aria-label="比較カテゴリ" data-i18n-aria="matrix.filterAria"><button type="button" class="filter active" data-filter="all" aria-pressed="true" data-i18n="matrix.filterAll">すべて</button><button type="button" class="filter" data-filter="engineering" aria-pressed="false" data-i18n="matrix.filterEng">技術・プロセス</button><button type="button" class="filter" data-filter="quality" aria-pressed="false" data-i18n="matrix.filterQual">品質</button><button type="button" class="filter" data-filter="governance" aria-pressed="false" data-i18n="matrix.filterGov">ガバナンス・成熟度</button></div>
+    <div class="matrix-wrap"><table><thead><tr><th data-i18n="matrix.th1">比較観点</th><th data-i18n="matrix.th2">KDDIアイレット AIDD</th><th>Matt Pocock Skills + Codex</th></tr></thead><tbody>
+      <tr data-kind="engineering"><td data-i18n-html="matrix.r1c1"><strong>要件整理</strong><span class="tag">PROCESS</span></td><td data-i18n="matrix.r1c2">AIを要件定義から活用。開発工程全体の一貫性を重視。</td><td data-i18n-html="matrix.r1c3"><b>grill-with-docs</b> で曖昧さを解消し、<b>to-spec</b> で仕様を明文化。</td></tr>
+      <tr data-kind="engineering"><td data-i18n-html="matrix.r2c1"><strong>コンテキスト</strong><span class="tag">TECH</span></td><td data-i18n="matrix.r2c2">既存コード、設計ルール、規約をAIが参照しやすい形に整理。</td><td data-i18n="matrix.r2c3">Glossary・ADR・AGENTS.mdなどを整備。Codexにプロジェクト文脈を渡す。</td></tr>
+      <tr data-kind="engineering"><td data-i18n-html="matrix.r3c1"><strong>タスク管理</strong><span class="tag">PROCESS</span></td><td data-i18n="matrix.r3c2">企画からテストまでを横断する開発プロセスを提供。</td><td data-i18n-html="matrix.r3c3"><b>to-tickets</b> で分解し、<b>implement-spec</b> 等で実装。</td></tr>
+      <tr data-kind="engineering"><td data-i18n-html="matrix.r4c1"><strong>実装主体</strong><span class="tag">TECH</span></td><td data-i18n="matrix.r4c2">AIが設計・実装・テストなどの実行部分を担当。</td><td data-i18n="matrix.r4c3">Codexがコード変更・コマンド実行・テスト・修正を担当。</td></tr>
+      <tr data-kind="quality"><td data-i18n-html="matrix.r5c1"><strong>テスト設計</strong><span class="tag">QUALITY</span></td><td data-i18n="matrix.r5c2">テスト手順を標準化し、AI活用と品質確認を結びつける。</td><td data-i18n-html="matrix.r5c3"><b>tdd</b> と既存テスト基盤。CI上で自動実行。</td></tr>
+      <tr data-kind="quality"><td data-i18n-html="matrix.r6c1"><strong>コードレビュー</strong><span class="tag">QUALITY</span></td><td data-i18n="matrix.r6c2">形式的チェックや一次レビューをAIに任せ、人が重要ロジックを確認。</td><td data-i18n-html="matrix.r6c3"><b>code-review</b> ＋ PR承認ルール。重要な変更は人が確認。</td></tr>
+      <tr data-kind="quality"><td data-i18n-html="matrix.r7c1"><strong>継続改善</strong><span class="tag">QUALITY</span></td><td data-i18n="matrix.r7c2">ルールと開発プロセスを標準化し再利用。</td><td data-i18n-html="matrix.r7c3"><b>retro</b> でAgent環境・チェック・規約を改善。</td></tr>
+      <tr data-kind="governance"><td data-i18n-html="matrix.r8c1"><strong>セキュリティ</strong><span class="tag">GOVERNANCE</span></td><td data-i18n="matrix.r8c2">企業向けサービスとしてセキュリティ・プライバシーへの対応を提供。</td><td data-i18n="matrix.r8c3">Skills単体では不足。権限管理、秘密情報保護、SAST/SCA等の追加が必要。</td></tr>
+      <tr data-kind="governance"><td data-i18n-html="matrix.r9c1"><strong>監査・承認</strong><span class="tag">GOVERNANCE</span></td><td data-i18n="matrix.r9c2">人の判断・承認を中心に据えた企業向けアプローチ。</td><td data-i18n="matrix.r9c3">GitHub PR、CIログ、Branch Protection、人の承認ゲートで構築。</td></tr>
+      <tr data-kind="governance"><td data-i18n-html="matrix.r10c1"><strong>導入成熟度</strong><span class="tag">MATURITY</span></td><td data-i18n="matrix.r10c2">企業向けサービス提供と、大規模システム刷新の公開実績がある。</td><td data-i18n="matrix.r10c3">公開OSSのSkills群。自社で運用モデルと実績を構築する必要がある。</td></tr>
+      <tr data-kind="governance"><td data-i18n-html="matrix.r11c1"><strong>導入コスト</strong><span class="tag">MATURITY</span></td><td data-i18n="matrix.r11c2">企業向け導入支援・開発サービス。個別の契約・体制による。</td><td data-i18n="matrix.r11c3">小規模から試行しやすい。ツール利用料、検証・統制・教育コストは別途必要。</td></tr>
+    </tbody></table></div>
+    <p class="tiny-source" data-i18n="matrix.source">公開資料に基づく機能比較と、自社導入案の対比。KDDI内部の非公開実装を断定するものではありません。フィルタで比較観点を切り替えられます。</p>
+  </div></section>
+  <section class="content-section" id="implementation"><div class="wrap">
+    <div class="section-index">05 / OUR IMPLEMENTATION</div><h2 data-i18n="impl.title">大企業の思想を、小さな実行モデルへ。</h2>
+    <p class="sec-desc" data-i18n="impl.desc">KDDIの組織やサービスをそのまま複製する必要はない。まずはCodexとSkills、既存のGitHub/CIを組み合わせ、1チームで再現可能な開発プロセスを構築する。</p>
+    <div class="flowchain">
+      <div class="flow-step"><div class="number">STEP 01</div><h3 data-i18n="impl.s1Title">仕様を固める</h3><p data-i18n="impl.s1Desc">質問で曖昧さをなくし、判断基準とテスト対象を明文化する。</p><span class="skill">grill-with-docs</span><span class="skill">to-spec</span></div>
+      <div class="flow-step"><div class="number">STEP 02</div><h3 data-i18n="impl.s2Title">AIが実装する</h3><p data-i18n="impl.s2Desc">仕様を小さなタスクに分け、Codexに変更と実装を任せる。</p><span class="skill">to-tickets</span><span class="skill">implement-spec</span></div>
+      <div class="flow-step"><div class="number">STEP 03</div><h3 data-i18n="impl.s3Title">自動で検証する</h3><p data-i18n="impl.s3Desc">テストとレビューを実行し、結果をもとに修正を繰り返す。</p><span class="skill">tdd</span><span class="skill">code-review</span></div>
+      <div class="flow-step"><div class="number">STEP 04</div><h3 data-i18n="impl.s4Title">次に活かす</h3><p data-i18n="impl.s4Desc">失敗や知見をルール・テスト・環境へ還元する。</p><span class="skill">retro</span><span class="skill">AGENTS.md</span></div>
+    </div>
+    <div class="rulebar" data-i18n-html="impl.rulebar"><b>実務適用の最低条件：</b> 権限管理 · シークレット保護 · 自動テスト · 静的解析 · PRレビュー · 承認ゲート · 実行ログ。Skillsは開発規律を提供し、企業の統制は別途組み込む。</div>
+    <p class="tiny-source" data-i18n-html="impl.source">Skills公式：<a class="source" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">github.com/mattpocock/skills ↗</a></p>
+  </div></section>
+  <section class="content-section" id="poc"><div class="wrap">
+    <div class="section-index">06 / PoC ROADMAP</div><h2 data-i18n="poc.title">まずは4週間で、効果を測る。</h2>
+    <p class="sec-desc" data-i18n="poc.desc">いきなり全社導入はしない。実際の開発案件を一つ選び、従来方式と比較可能な条件で、AIが担える工程と品質を検証する。</p>
+    <div class="roadmap" role="group" aria-label="4週間の計画" data-i18n-aria="poc.roadmapAria"><button type="button" class="week active" data-week="0" aria-pressed="true" data-i18n-html="poc.w0Btn"><b>WEEK 01</b>対象と基準</button><button type="button" class="week" data-week="1" aria-pressed="false" data-i18n-html="poc.w1Btn"><b>WEEK 02</b>仕様と環境</button><button type="button" class="week" data-week="2" aria-pressed="false" data-i18n-html="poc.w2Btn"><b>WEEK 03</b>実装と検証</button><button type="button" class="week" data-week="3" aria-pressed="false" data-i18n-html="poc.w3Btn"><b>WEEK 04</b>評価と判断</button></div>
+    <div class="week-view" aria-live="polite"><div class="section-index" id="week-label">WEEK 01</div><h3 id="week-title">対象案件と成功条件を決める</h3><p id="week-detail">既存の小規模API改修、あるいはレガシー機能の移行を1件選ぶ。対象範囲、既存の品質基準、比較に使う工数・手戻り・テスト指標を合意する。</p></div>
+    <div class="kpis"><div class="kpi" data-i18n-html="poc.kpi1">開発リードタイム<small>開始からレビュー完了まで</small></div><div class="kpi" data-i18n-html="poc.kpi2">品質・不具合<small>テスト合格率、レビュー指摘、回帰不具合</small></div><div class="kpi" data-i18n-html="poc.kpi3">人の関与時間<small>手作業、確認、修正、承認の所要時間</small></div></div>
+    <div class="compare-conclusion" data-i18n-html="poc.conclusion">PoCのゴールは「AIで作れた」というデモではない。<br>品質を守りながら、どの工程の工数をどこまで置き換えられるかを示すこと。</div>
+  </div></section>
+  </main>
+  <footer class="wrap footer"><div class="eyebrow">THE PROPOSAL</div><strong data-i18n-html="footer.title">AIツールの導入ではなく、<br>開発の進め方そのものを変える。</strong><p data-i18n="footer.desc">小さなPoCから始め、再現性のある成果を確認し、標準プロセスへ展開する。</p>
+    <div class="source-list"><a href="https://biz.kddi.com/beconnected/feature/2026/260731/" target="_blank" rel="noopener noreferrer">KDDI AIDD</a><a href="https://www.iret.co.jp/news/20261015.html" target="_blank" rel="noopener noreferrer">KDDIアイレット</a><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">Matt Pocock Skills</a></div>
+    <p class="legal" data-i18n="footer.legal">2026 / AIDD STRATEGY • Concept preview • KDDIアイレットとの提携・公式関係を示すものではありません。</p>
+  </footer>
+</body>
+</html>
